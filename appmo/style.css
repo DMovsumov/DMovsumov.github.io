@@ -1,0 +1,251 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Exo', sans-serif;
+}
+
+body ul {
+    list-style: none;
+}
+
+/*
+*
+* Headers
+* 
+*/
+div.header {
+    height: 1090px;
+    width: 1600px;    
+    background: url(./img/picjumbocom_img_1596_12.png) no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+
+.menu {    
+    width: 1600px;
+    height: 80px;
+    margin: 40px 0 0 0;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    justify-content: space-evenly;
+    /* align-items: center; */
+  }
+
+ul div li a {
+    text-decoration: none;
+    font-family: 'Exo', sans-serif;
+    color: #919191;
+    font-weight: 400;
+}
+
+ul div li a:hover {
+    color: rgb(212, 198, 71);
+}
+
+.selected {
+    color: #de5749;
+    font-weight: 600;
+}
+  
+ul div {
+    display: flex;
+    flex-basis: 40%;
+    justify-content: space-evenly;
+}
+  
+ul img.logo{
+    height: 8em;
+    
+}
+
+.logo_name {
+    font-family: 'Exo';
+    font-size: 50px;
+    line-height: 19px;
+    font-weight: 800;
+    color: #de5749;
+    position: absolute;
+    margin-top: 60px;
+}
+
+.logo_name span {
+    color: #919191;
+    font-size: 33px;
+    font-weight: 600;
+}
+
+.header_content {
+    width: 900px;
+    height: 180px;
+    text-align: center;
+    margin: 80px 350px 0 350px;
+    background: #de5749;
+    border: solid #de5749;
+    border-radius: 10.0px;
+    opacity: 0.5;
+}
+
+.header_content h2 {
+    font-family: 'Exo';
+    font-size: 41.7px;
+    line-height: 41px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.header_content p {
+    font-family: 'Exo';
+    font-size: 16.7px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+
+/* 
+*
+* Iphone https://codepen.io/JGallardo/pen/LtAer
+*
+*/
+
+/* resets */
+/* body { margin:0; padding:0; } */
+/* outer container */
+.outside{  
+  height: 1090px;
+  width: 1600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  margin-top: 340px;
+}
+/*  
+# change width to 793px (total size of the image container) when testing
+# background-size rule can be removed
+# iPhone 5 display resolution is 1136 x 640 retina
+# http://www.idev101.com/code/User_Interface/sizes.html
+*/
+.containerIphone5{
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/101702/iphone-5.png');
+  background-size: 396px 883px;
+  background-color: transparent;
+  width: 396px;
+  height: 883px;
+  margin: auto;
+  position: absolute;
+  top: 0; 
+  left: 0;
+  bottom: 0; 
+  right: 0;  
+}
+/*
+# modify if you want to test scrolling
+*/
+.innerIphone5{
+  background-color: #fff;
+  width: 320px;
+  height: 568px;
+  /* - 20px for status */
+  height: 548px;
+  margin: auto;
+  position: absolute;
+  top: -56px; /* needs improvement */ 
+  left: 0; 
+  bottom: 0; 
+  right: 0;
+  border-radius: 7px;
+} 
+
+/* Add your work here */
+/* .wrapper {
+    height: 548px;
+    width: 320px;    
+    background: white no-repeat;    
+    position: absolute;    
+    border-radius: 7px;    
+} */
+
+
+/* 
+*
+* Site content ///////////////////////////////////////////////////
+*
+*/
+
+/* TODO */
+.site_content {
+    margin-top: 150px;
+    width: 1600px;
+    height: 1000px;
+    background-color: #de5749;
+    border-top-left-radius: 30% 40px;
+    border-top-right-radius: 30% 40px;
+    border-bottom-right-radius: 50% 40px;
+    border-bottom-left-radius: 50% 40px;    
+}
+
+.site_content .header_content {
+    margin-top: 50px;
+    color: #ffffff;
+}
+
+.site_content .header_content {
+    opacity: 5;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.column ul {
+    display: block;
+    width: 80%;
+    float: left;
+    column-count: 2;
+}
+
+.column ul li {
+    text-decoration: none;
+    
+    padding: 25px;
+    
+}
+
+.column ul li p {
+    margin-top: 10px;
+}
+
+.email {
+    display: flex;
+    flex-basis: 40%;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.sbs {
+    font-family: 'Exo';
+    font-size: 50px;
+    line-height: 19px;
+    font-weight: 800;
+    color: #de5749;
+    position: absolute;
+    margin-top: 60px;
+}
+
+.sbs a {
+    text-decoration: none;
+    color: #d34f41;
+}
