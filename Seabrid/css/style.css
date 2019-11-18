@@ -185,6 +185,7 @@ hr {
   font-family: "Open sans", sans-serif;
   color: #5c5c5c;
   margin-top: 30px;
+  margin-bottom: 48px;
 }
 
 .portfolio .portfolio__title {
@@ -238,10 +239,12 @@ hr {
   width: 302px;
   margin-right: 50px;
   margin-left: 50px;
+  margin-top: 61px;
 }
 
 .footer__content h3 {
   color: #efefef;
+  margin-bottom: 25px;
 }
 
 .footer__content p {
@@ -262,5 +265,40 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 34px;
+}
+
+.footer .contact__info div {
+  display: inline-block;
+}
+
+.footer .contact__info div .fas {
+  margin-right: 15px;
+  color: #68c6b9;
+}
+
+.footer .contact__info-span {
+  color: #d2d2d2;
+  font-family: "Open sans", sans-serif;
+}
+
+.under__footer {
+  height: 81px;
+  background-color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #d2d2d2;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "Open sans", sans-serif;
+}
+
+.under__footer span {
+  margin-left: 50px;
 }
 /*# sourceMappingURL=style.css.map */
