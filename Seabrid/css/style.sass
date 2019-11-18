@@ -1,0 +1,168 @@
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+body        
+    min-width: 1050px
+    
+
+$text-color: #ffffff
+$font-lato: 'Lato', sans-serif
+$font-open: 'Open sans', sans-serif
+
+///Header Шапка сайта - навигация
+.header
+    margin-right: 50px
+    margin-left: 50px
+    &-logo
+        margin-bottom: 40px
+        color: #5b5b5b
+        font-size: 35px
+        font-family: $font-lato
+    &-navbars
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        border: 1px solid #393939
+        background-color: #393939
+        .navbar, .navbar__icons
+            padding-top: 20px
+            padding-bottom: 20px
+            padding-left: 30px
+        .navbar__icons
+            padding-right: 20px
+        .navbar__icons a
+            margin-right: 10px
+            &:last-child
+                margin-right: 0    
+        .navbar a
+            font-size: 13px
+            font-weight: 700
+            text-transform: uppercase
+            margin-right: 30px
+            text-decoration: none
+            text-align: center
+            font-family: $font-open            
+            &:last-child
+                margin-right: 0
+        .navbar__icons a
+            text-decoration: none
+        .navbar a, .navbar__icons i
+            color: $text-color
+/// Section Контент сайта, slider 
+.slider
+    margin-right: 50px
+    margin-left: 50px
+    font-family: $font-open
+    color: #5c5c5c
+    .title
+        display: block
+        text-align: center
+        margin-top: 50px
+    .slider__title
+        font-size: 35px
+        font-weight: 700
+        line-height: 65px
+    .slider__subtitle
+        font-size: 25px
+        font-weight: 300
+        line-height: 38px
+    &__content
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 58px
+    &__input
+        display: flex
+        justify-content: center
+        align-items: center
+    .slider__img
+        position: relative
+        .slide
+////////////////////////////////
+.info
+    margin-right: 50px
+    margin-left: 50px
+    font-family: $font-open
+    color: #5c5c5c
+    margin-top: 50px
+    .info__text
+        text-align: center
+    .info__img
+        display: flex
+        justify-content: space-around
+        margin-top: 50px
+        margin-bottom: 47px
+    .info__img div
+        border: 1px solid #ececec
+        border-radius: 50%
+        height: 100px
+        width: 100px
+        background-color: #ececec
+    .info__img .laptop
+            background-color: #75cec2
+    .info__img div
+        display: flex
+        justify-content: center
+        align-items: center
+hr 
+    opacity: 0.2
+/////////////// Portfolio Section
+.portfolio
+    margin-right: 50px
+    margin-left: 50px    
+    font-family: $font-open
+    color: #5c5c5c
+    margin-top: 30px
+    .portfolio__title
+        text-transform: uppercase
+        font-size: 16px
+        font-weight: 700
+        line-height: 65px
+    &__info
+        display: flex
+        justify-content: space-between
+        &-us
+            h4
+                font-size: 16px
+                font-weight: 700
+                margin-top: 15px
+            span
+                line-height: 50px
+                color: #75cec2
+                font-size: 13px
+                font-weight: 400
+            p
+                font-size: 14px
+                font-weight: 400
+                line-height: 28px
+///// Foooter 
+.footer
+    display: flex
+    justify-content: space-between
+    font-family: $font-open
+    background-color: #393939
+    height: 365px
+    &__content
+        width: 302px
+        margin-right: 50px
+        margin-left: 50px
+    &__content h3
+        color: #efefef
+    &__content p
+        color: #d2d2d2
+    .contact__info
+        display: flex
+        justify-content: center
+        align-items: flex-start
+        flex-direction: column
+    
+                
+                
+
+        
+            
+
+              
+
+        
