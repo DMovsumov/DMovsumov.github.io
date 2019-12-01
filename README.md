@@ -8,3 +8,5 @@
 [Dart_Servie_Manager](https://dmovsumov.github.io/Dart_Service_Manager/ "Dart_Servie_Manager") - верстка Landing Page с применением гридов и флексов, material icons, font awesome.
 
 [Seabrid.](https://dmovsumov.github.io/Seabrid/ "Seabrid.") - верстка главной страницы сайта.
+
+[Leo Shop](https://dmovsumov.github.io/Leo%20SHop/ "Leo Shop") - магазин очков, сверстанный с использованием flexbox. Так же имеется адаптив под многие разрешения и телефоны. Магазин еще в разработке.
