@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import "./mixin/font.scss";
+$open-sans: 'Open Sans', sans-serif;
+$header-text-color_1: #656565;
+$header-text-color_2: #ffffff;
+
+body{
+    @include font($header-text-color_1, 14px);
+    // min-width: 1400px;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+///Header - шапка сайта
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+.header{
+    
+
+.under-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15%;
+    height: 43px;
+    background-color: #4cb1ca;
+    @include font($header-text-color_2, 13px)
+}
+
+.personal-account {
+    a {
+        text-decoration: none;
+        @include font($header-text-color_2, 13px);
+        border-left: 1px solid $header-text-color_2;
+        padding: 5px;
+        &:first-child {
+            border-left: none;
+        }
+    }
+}
+.navbar-header {
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 15%;
+    height: 100px;
+    background-color: $header-text-color_2;
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            margin-right: 20px;
+            color: $header-text-color_1;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;            
+            font-size: 14px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .logo {
+            @include font($header-text-color_1, 36px);
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-right: 50px;
+            font-weight: 700;
+        }
+    }
+    .search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .find {
+            border: 1px solid #c6c6c6;
+            border-radius: 10%;
+            background-color: #c6c6c6;
+            width: 50px;
+            height: 29px;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+
+        input {            
+            width: 174px;
+            height: 29px;            
+            border: 1px solid #c6c6c6;
+            background-color: #ffffff;
+        }
+    }
+
+    .cart-block {
+        display: flex;
+        align-items: center;
+        i{
+            background-color: #7db122;
+            border: 1px solid #7db122;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;            
+        }
+
+        .fas {
+            color: $header-text-color_2;
+            text-align: center;
+            padding-top: 8px;
+            font-size: 20px;
+            margin-left: 8px;
+        }
+
+        .cart {
+            margin-left: 21px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $header-text-color_1;
+            font-weight: 700;
+        }
+    }
+}
+.slider{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    height: 475px;
+    margin-bottom: 15px;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider .item img {
+    object-fit: cover;
+    width: 100%;
+    height: 475px;
+    border: none !important;
+    box-shadow: none !important;
+}
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-size: 50px;
+}
+
+.slider .prev {
+    left: 10%;
+}
+
+.slider .next {
+    right: 10%;
+}
+
+.slideText {
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+@import "./media/_media.scss";
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+///Section - content контент сайта
+////////////////////////////////////////////////////////////////////////////////////////////////
+
