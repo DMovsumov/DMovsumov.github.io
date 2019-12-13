@@ -1,0 +1,126 @@
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .section_content {
+        margin-left: 5%;
+
+        .wrap {
+            aside {
+                flex: 0 0 calc( 30% - 30px );
+                padding: 0;
+            }
+
+            .item_products {
+                flex: 1 0 70%;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .section_content {
+        margin-left: 3%;
+
+        .wrap {
+            aside {
+                flex: 0 0 calc( 20% - 20px );
+            }
+
+            .item_products {
+                flex: 1 0 50%;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .section_content {
+        margin-left: 2%;
+
+        .wrap {
+            aside {
+                flex: 0 0 calc( 20% - 20px );
+            }
+
+            .item_products {
+                flex: 1 0 50%;
+
+                .products{
+                    min-width: 233px;
+
+                    .product_ {
+                        flex: 1;
+                        min-height: 318px;
+                        min-width: 233px;
+                        
+                        .item-img{
+                            height: 229px;
+                            max-width: 233px;
+                            // margin-left: 15px;
+                            // margin-top: 30px;
+                            
+                            
+                            img {
+                                max-height: 75%;
+                                max-width: 75%;
+                            }
+                        }
+                        .fa-shopping-basket {
+                            font-size: 25px;
+                            margin-left: 150px;
+                            margin-top: 15px;
+                        }
+                    }                    
+                }
+            }
+        }
+    }
+}
+//Iphone 5/SE
+@media (min-width: 320px) and (max-width: 767px) {
+    .section_content {
+        .content_h3 {
+            text-align: center;
+        }
+        .wrap {
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+            aside {
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+
+            .item_products {
+                flex: 1 0 100%;
+                margin-left: 40px;
+
+                .products{
+                    min-width: 233px;
+
+                    .product_ {
+                        flex: 1;
+                        min-height: 318px;
+                        min-width: 233px;
+                        
+                        .item-img{
+                            height: 229px;
+                            max-width: 233px;
+                            margin-left: 15px;
+                            margin-top: 30px;
+                            
+                            
+                            img {
+                                max-height: 75%;
+                                max-width: 75%;
+                            }
+                        }
+                        .fa-shopping-basket {
+                            font-size: 25px;
+                            margin-left: 150px;
+                            margin-top: 15px;
+                        }
+                    }                    
+                }
+            }
+        }
+    }
+}

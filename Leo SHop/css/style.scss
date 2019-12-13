@@ -7,6 +7,7 @@
 $open-sans: 'Open Sans', sans-serif;
 $header-text-color_1: #656565;
 $header-text-color_2: #ffffff;
+$price-color: #7db122;
 
 body{
     @include font($header-text-color_1, 14px);
@@ -201,4 +202,167 @@ body{
 ////////////////////////////////////////////////////////////////////////////////////////////////
 ///Section - content контент сайта
 ////////////////////////////////////////////////////////////////////////////////////////////////
+.section_content{
+    margin-left: 10%;
+    // min-width: 100vh;
+    .content_h3 {
+        text-transform: uppercase;
+        @include font ($header-text-color_1, 24px);
+        font-weight: 400;
+        letter-spacing: -0.24px;
+    }
+.wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 
+    aside {
+        flex: 0 0 calc( 20% - 20px );
+        // padding-right: 50px;
+    }
+    .sidebar {
+        min-height: 445px;
+        max-width: 260px;
+        margin-right: 20px;
+        
+        box-shadow: 0 0 5px #eaeaea;
+        border: 13px solid #ffffff;
+        background-color: #ffffff;
+        
+        border-top: 5px solid #5fb8ce;
+        
+        .sidebar_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h3 {
+                text-transform: uppercase;
+                text-align: center;
+                @include font ($header-text-color_1, 24px);
+                font-weight: 600;
+            }
+
+            a {
+                position: absolute;
+                text-decoration: none;
+                border: 1px solid #4cb1ca;
+                padding: 10px 15px;
+                color: $header-text-color_2;
+                background-color: #4cb1ca;
+                margin-top: 180px;
+            }
+        }
+    }
+    .sidebar_subscribe{
+        box-shadow: 0 0 5px #eaeaea;
+        border: 13px solid #ffffff;
+        background-color: #ffffff;
+        width: 260px;
+        height: 281px;
+        margin-top: 31px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-top: 5px solid #5fb8ce;
+
+        h3 {
+            text-align: center;
+            @include font ($header-text-color_1, 24px);
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 23px;
+        }
+
+        span {
+            text-align: center;
+            margin-bottom: 11px;
+        }
+
+        hr {
+            width: 85px;
+            height: 1px;
+            background-color: #ededed;
+            opacity: 0.2;
+        }
+
+        input {
+            margin-top: 14px;
+            width: 185px;
+            height: 29px;
+            border: 1px solid rgba(198, 198, 198, 0.5);
+            background-color: #ffffff;
+        }
+        
+        a {
+            padding: 10px 15px;
+            text-decoration: none;
+            background-color: #7eb123;
+            margin-top: 18px;
+            color: $header-text-color_2;
+        }
+    }
+    .item_products {
+        flex: 1 0 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+
+        .products {
+            padding: 15px;
+            flex: 0 0 calc( 20% - 30px );
+            min-width: 300px;
+            display: flex;
+            flex-direction: row;
+            box-shadow: 0 0 5px #eaeaea;
+            border: 8px solid #ffffff;
+            background-color: #ffffff;
+            margin-right: 15px;
+            margin-bottom: 29px;
+            margin-top: 24px;
+
+            .product_ {
+                flex: 1;
+                min-height: 318px;
+                min-width: 233px;
+                
+                .item-img{
+                    height: 229px;
+                    max-width: 233px;
+                    margin-left: 15px;
+                    margin-top: 30px;
+                    
+                    
+                    img {
+                        max-height: 100%;
+                        max-width: 100%;
+                    }
+                }
+                
+                .price {
+                    @include font($price-color, 18px);
+                    font-weight: 400;
+                    line-height: 22px;
+                }
+
+                .fa-shopping-basket {
+                    position: absolute;
+                    font-size: 35px;
+                    background-color: #7db122;
+                    padding: 10px;
+                    border-radius: 50%;
+                    margin-left: 200px;
+                    color: $header-text-color_2;
+                    // margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+// @import "./media/_media_section.scss";
+}
+// @import "./media/_media.scss";
+@import "./media/_media_section.scss";
