@@ -366,3 +366,191 @@ body{
 }
 // @import "./media/_media.scss";
 @import "./media/_media_section.scss";
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+///Footer - подвал сайта
+////////////////////////////////////////////////////////////////////////////////////////////////
+.footer {
+    .footer_info {
+        height: 106px;
+        background-color: #4cb1ca;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            color: $header-text-color_2;
+            font-size: 21px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-right: 87px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        
+        .fas {
+            color: #39a0b9;
+            font-size: 35px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+    }
+
+    .under__footer {
+        display: flex;
+        flex-direction: row;
+        background-color: #39a0b9;
+        justify-content: space-around;
+        padding: 51px 8%;
+        .facebook {
+            display: flex;
+            flex-direction: column;
+
+            .__name {
+                @include font($header-text-color_2, 20px);
+                font-weight: 400;
+                text-transform: uppercase;
+                margin-bottom: 25px;
+            }
+            span {
+                color: $header-text-color_2;
+                font-size: 13px;
+            }
+
+            a {
+                margin-top: 6px;
+            }
+
+            hr {
+                margin-bottom: 7px;
+                width: 233px;
+                height: 1px;
+                background-color: #4cb1ca;
+                opacity: 0.1;
+                margin-top: 7px;
+            }
+        }
+
+        .twitter {
+            display: flex;
+            flex-direction: column;
+
+            .posts {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                margin-bottom: 31px;
+                width: 290px;
+
+                .fab {
+                    margin-right: 24px;
+                    color: #39a0b9;
+                    font-size: 23px;
+                    padding: 10px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                }
+
+                p {
+                    color: $header-text-color_2;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .information {
+            display: flex;
+            flex-direction: column;
+
+            .info_post {
+                margin-bottom: 7px;
+                width: 200px;
+                a {
+                    text-decoration: none;
+                    margin-left: 11px;
+                    color: $header-text-color_2;
+                    font-size: 13px;
+                }
+                i {
+                    color: $header-text-color_2;
+                }
+            }
+        }
+
+        .contact_us {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                color: $header-text-color_2;
+                line-height: 24px;
+            }
+
+            hr {
+                width: 196px;
+                height: 1px;
+                background-color: #4cb1ca;
+                opacity: 0.1;
+                margin-top: 15px;
+                margin-bottom: 18px;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            .fab {
+                padding: 10px;
+                background-color: #fff;
+                border-radius: 50%;
+                margin-right: 10px;
+                color: #39a0b9;
+            }
+        }
+
+        .__name {
+            @include font($header-text-color_2, 20px);
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+    }
+
+    .under-under_footer {
+        height: 64px;
+        background-color: #0b4b5a;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        span {
+           color: #8adcf0;
+           font-size: 13px;
+           font-weight: 400;
+           line-height: 19px;      
+        }
+
+        .footer-nav {
+            a {
+                color: #8adcf0;
+                text-decoration: none;
+                border-right: 1px solid #8adcf0;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-weight: 400;
+                line-height: 19px;
+                &:last-child {
+                    padding-left: 0;
+                    padding-right: 0;
+                    border-right: none;
+                }
+            }
+        }
+    }
+    @import "./media/media_footer";
+}
+
