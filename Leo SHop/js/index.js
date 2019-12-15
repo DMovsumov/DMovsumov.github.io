@@ -24,17 +24,21 @@ function select() {
     }
 }
 
+let origin_price = []
+for(let i = 0; i < price.length; i++){
+    origin_price[i] = price[i].innerHTML
+}
 
 select_currency.addEventListener('change', (e) => {
-        for(let per of price) {
+        for(let i = 0; i < price.length; i++) {
             if(e.target.value == "RUB"){
-                per.innerHTML = per.innerHTML * 63
+                price[i].innerHTML = origin_price[i] * 63 + ' ' + '₽'
             }
             else if(e.target.value == "EUR"){
-                per.innerHTML = per.innerHTML * 70 
+                price[i].innerHTML = Math.ceil(origin_price[i] / 1.11)  + ' ' + '€'
             }
             else if (e.target.value == "USD") {
-                per.innerHTML = per.innerHTML 
+                price[i].innerHTML = origin_price[i] + ' ' + '$'
             }
         }
 })
